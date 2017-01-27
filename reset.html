@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Reset Password</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row" id="pwd-container">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <section class="reset-form">
+                    <form method="post" action="#">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2>Reset Password</h2>
+                                <input type="text" name="secureCode" placeholder="Enter Secure Code" required class="form-control input-lg secure-code" />
+                                <ul class="secure-code-errors errors"></ul>
+                                <input type="hidden" class="password-verdict">
+                                <input type="password" class="form-control input-lg password" placeholder="Password" required="" />
+                                <div class="pwstrength_viewport_progress"></div>
+                                <input type="password" class="form-control input-lg password-confirm" placeholder="Confirm password" required="" />
+                                <ul class="password-confirm-errors errors"></ul>
+                                <button type="button" class="btn btn-lg btn-primary btn-block">Update password</button>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>How to create a good password</h4>
+                                <ul>
+                                    <li>First advice how to create a good password</li>
+                                    <li>Second advice how to create a good password</li>
+                                    <li>Third advice how to create a good password</li>
+                                    <li>Fourth advice how to create a good password</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
